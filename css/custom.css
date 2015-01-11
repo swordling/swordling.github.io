@@ -44,7 +44,7 @@ h1, h2, h3, h4 ,h5, h6 {
 }
 #reach {
     color: #fff;
-    background: url(../_/restaurant.png);
+    background: url(https://raw.githubusercontent.com/swordling/swordling.github.io/master/_/restaurant.png);
     background-repeat: repeat;
     margin: -20px 0 0 0;
     padding: 80px 0 80px 0;
