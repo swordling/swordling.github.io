@@ -5,39 +5,76 @@
 font-family: 'Muli', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
+/* Site Alert */
+#site-alert {
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    background: #a90329; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+    position: fixed;
+}
+#site-alert p {
+    color: #fff;
+    text-align: center;
+    margin: 26px 0 26px 0;
+}
+
+/* Login Page */
+.account-input {
+    border: 1px solid #ccc !important;
+    margin: 8px 0 8px 0 !important;
+    height: 40px !important;
+    padding: 12px !important;
+    line-height: 30px !important;
+    width: 100%;
+    font-size: 100% !important;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    transition: background-color .5s;
+}
+#account {
+    margin: 80px 0 80px 0;
+}
+.account {
+    width: 448px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#account h1 {
+    margin-top: 0;
+}
+.account-button {
+    margin: 8px 0 0 0;
+    border: 1px solid #ccc;
+    padding: 12px;
+    width: 50%;
+    background: transparent;
+}
+.account-button:hover {
+    background: #16a085;
+    color: #fff;
+}
+/* All styles */ 
+html {
+    min-width: 970px;
+    overflow-x: scroll;
+}
 body {
     font-family: 'Muli', sans-serif;
 }
 h1, h2, h3, h4 ,h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
-#contact .fancy {
-    line-height: 0.5;
-    text-align: center;
-}
-#contact .fancy span {
-    display: inline-block;
-    position: relative;  
-}
-#contact .fancy span:before,
-#contact .fancy span:after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    border-bottom: 1px solid #fff;
-    top: 3px;
-    width: 100%;
-    overflow-x: hidden;
-
-}
-#contact .fancy span:before {
-    right: 100%;
-    margin-right: 15px;
-}
-#contact .fancy span:after {
-    left: 100%;
-    margin-left: 15px;
-}
+/* Fancy */
 .fancy {
     line-height: 0.5;
     text-align: center;
@@ -53,7 +90,7 @@ h1, h2, h3, h4 ,h5, h6 {
     height: 5px;
     border-bottom: 1px solid #222;
     top: 3px;
-    width: 100%;
+    width: 256px;
     overflow-x: hidden;
 
 }
@@ -65,177 +102,225 @@ h1, h2, h3, h4 ,h5, h6 {
     left: 100%;
     margin-left: 15px;
 }
-#home {
-    height: 100vh;
-    -webkit-background-size: cover;
-    background-attachment: scroll;
-    background-image: url(../_/IbJK5etSN6dH6jAF4U0U_DSC_0280-1.jpg);
-    background-position: 50% 50%;
-    background-size: cover;
-    box-sizing: border-box;
-    color: rgb(255, 255, 255);
+/* Title */
+#title {
+    color: #fff;
+    background: url(../_/restaurant.png);
+    background-repeat: repeat;
+    margin: -20px 0 0 0;
+    padding: 80px 0 80px 0;
+    position: relative;
+    height: inherit;
+}
+.width980 {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.clear {
+  clear: both;
+}
+.container {
+    width: 970px !important;
+}
+#title input[type=text], #title input[type=email], #title input[type=password] {
+    border: 0;
+    margin: 0;
+    height: 40px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 90%;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    transition: background-color .5s;
+}
+#title input:focus {
+    outline: none;
+}
+#title label {
+    width: 37.5%;
     display: block;
+    float: left;
+    color: #999;
+    padding: 0 10px;
+    font-size: 70%;
+    text-transform: uppercase;
+    line-height: 40px;
+    white-space: nowrap;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
 }
-#home .container {
-    margin: auto;
-    padding: 42vh 0 0 0;
+#title .active label {
+    color: #333;
+}
+#title .input {
+    border: solid #ccc;
+    border-width: 0 1px 1px 1px;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    transition: background-color .5s;
+    overflow: hidden;
+    background: #fff;
+    color: #222;
+}
+#title .input:first-of-type {
+    border-top: 1px solid #ccc;
+    border-radius: 6px 6px 0 0;
+}
+#title .input:last-of-type {
+    border-radius: 0 0 6px 6px;
+}
+#title .active, .active input {
+    background-color: #feffe8;
+}
+#title .input:hover label {
+    color: #333;
+}
+#title form {
+    display: block;
+    max-width: 300px;
+    margin: 20px auto;
+}
+#title .toggle-mask {
+    font-size: 70%;
+    color: #999;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 40px;
+    display: block;
+    width: 20%;
     text-align: center;
+    float: right;
 }
-#home .container h1 {
+#title .toggle-mask:hover {
+    color: #0c4d6d;
+}
+#title input[type=submit] {
+    -webkit-appearance: none;
+    border: 0;
+    background-color: #fff;
+    color: #222;
+    border-radius: 6px;
+    border-color: 1px solid #ccc;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 90%;
+    line-height: 40px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+#title input[type=submit]:focus, #reach input[type=submit]:hover {
+      background-color: #ccc;
+}
+#title #full-name, #email {
+      width: 62.5%;
+      display: block;
+}
+#title #password {
+      width: 42.5%;
+      float: left;
+}
+.btn-title {
+    color: #383235;
+    background-color: #fff;
+    border-color: #F5F5F5;
+    border-radius: 0px;
+}
+.help-block {
+    color: #fff;
+}
+#title label {
+    color: #222;
+}
+#title .col-xs-8 h1 {
     font-size: 4em;
 }
-#home .container p {
+#title .col-xs-8 p {
     font-size: 2em;
 }
-.home-rdir {
-    padding: 12px 0 12px 0;
-    font-family: 'Montserrat', sans-serif;
-    border: 3px solid #fff;
-    background: transparent;
-    width: 250px;
-    margin: 1em 0 0 0;
+.byline {
+    font-size: 1.2em;
+    padding: 12px 0 0 0;
 }
-#home .row {
-    max-width: 525px;
+/* Content */
+#content .container {
+    padding: 87px 0 87px 0;
     margin: auto;
-    padding: 2em 0 0 0;
 }
-.navbar {
-    font-family: 'Montserrat', sans-serif;
+
+.uppercase {
     text-transform: uppercase;
-    padding: 1em 0 1em 0;
-    background: transparent;
-    color: #555;
-    border: none;
 }
-.navbar-default .navbar-nav>.active>a {
-    color: #fff;
-    background-color: #1abc9c;
-    border-radius: 5px;
+.color-fa {
+    color: #16a085;
+    padding: 22px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    -moz-box-shadow: 0px 0px 1px #888;
+    -webkit-box-shadow: 0px 0px 1px #888;
+    box-shadow: 0px 0px 1px #888;
+    width: 86px;
+    margin: 0 auto 26px auto;
 }
-.navbar-default .navbar-nav>li>a {
-    color: #fff;
+#content .row {
+    margin: auto;
+    padding: 80px 0 0 0;
 }
-.navbar-default .navbar-nav>li>a:hover {
-    color: #e5e5e5;
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
 }
-#get {
-    min-height: 90vh;
-    background: #fff;
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    border-radius: 0 0 6px 6px;
+}
+/* Get */
+.os {
+    padding: 80px 0 0 0;
+    margin: auto;
+}
+.os .btn {
+    width: 48%;
+    padding: 12px;
+    text-align: center;
+}
+.os p {
+    text-align: center;
+    padding: 18px;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
 }
 #get .container {
-    padding: 16vh 0 0 0;
+    padding: 0 0 80px 0;
 }
-.get {
-    max-width: 80%;
-    margin: auto;
+
+/* Footer */
+#footer .container {
+    padding: 40px 0 40px 0;
+    border-top: solid 1px #ccc;
 }
-.get-windows {
-    background: #222;
-    margin: 8em 0 0 0;
-}
-.get-windows h3 {
-    color: #fff;
-    padding: 26px; 
-}
-.get-windows h3:hover {
-    color: #3498db;
-}
-.get-get {
-    background: #333;
-    margin: -1em 0 0 0;
-}
-.get-get h4 {
-    color: #fff;
-    padding: 1em 0 0 0;
-}
-.get-get p {
-    color: #fff;
-    padding: 0 0 1em 0;
-}
-.get-get a {
-    color: #fff;
-}
-.get-get a:hover {
-    color: #E5E5E5;
-    text-decoration: underline;
-}
-#about {
-    background: #e5e5e5;
-    height: 90vh;
-}
-#about .container {
-    padding: 16vh 0 0 0;
-}
-#about .row {
-    margin: 8em 0 0 0;
-}
-#support {
-    background: #fff;
-    height: 90vh;
-}
-#support .container {
-    padding: 16vh 0 0 0;
-}
-#support .row {
-    padding: 8em 0 0 0;
-    max-width: 525px;
-    margin: auto;
-}
-.wiki {
-    padding: 12px 0 12px 0;
-    font-family: 'Montserrat', sans-serif;
-    border: 3px solid #19b698;
-    background: #1abc9c;
-    width: 60%;
-    margin: 0 20% 0 20%;
-    color: #fff;
-}
-#get p {
-    margin: 2em 0 0 0;
-}
-#about p {
-    margin: 2em 0 0 0;
-}
-.void {
-    margin: 0em 0 0 0 !important;
-}
-#support p {
-    margin: 2em 0 0 0;
-}
-#contact p {
-    margin: 2em 0 0 0;
-}
-#contact {
-    background: #333;
-    height: 90vh;
-    color: #fff !important;
-    background-image: url(../_/map-image.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#contact .container {
-    padding: 16vh 0 0 0;
-}
-#contact .row {
-    padding: 8em 0 0 0;
-    max-width: 525px;
-    margin: auto;
-}
-.modal-dialog {
-    max-width: 304px;
-}
-#footer p {
-    padding: 1.5em 26px 1em 26px;
-}
-.footer-left {
-    float: left;
-    text-align: left;
+#footer ul {
+    list-style-type: none;
+    text-align: center;
     display: inline;
 }
-.footer-right {
-    float: right;
-    text-align: right;
+#footer ul li {
     display: inline;
+    padding: 12px 6px 12px 6px;
+}
+.margin04000 {
+    margin-right: 40px;
 }
     

@@ -38,12 +38,16 @@
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="/">Explore <span class="sr-only">(current)</span></a></li>
                             <li><a href="#get">Get</a></li>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="https://support.ttvmc.com">Support</a></li>
+                            <li><a href="https://blog.ttvmc.com">Blog</a></li>
                             
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><button type="button" class="btn btn-default navbar-btn">Log in</button></li>
+                            <li>
+                                <form action="/account">
+                                    <button type="submit" class="btn btn-default navbar-btn">Log in</button>
+                                </form>
+                            </li>
                       </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -51,7 +55,7 @@
         </section>
         
         <section>
-            <div id="reach">
+            <div id="title">
                 <div class="width980">
                     <div class="container">
                         <div class="row">
@@ -73,8 +77,8 @@
                                     </div>
                                     <div class="input clearfix">
                                         <label for="password">Password</label>
-                                        <input type="text" id="password" name="password" maxlength="12" autocorrect="off" autocapitalize="off">
-                                        <span class="toggle-mask">Hide</span>
+                                        <input type="password" id="password" name="password" maxlength="12" autocorrect="off" autocapitalize="off">
+                                        <span class="toggle-mask">Show</span>
                                     </div>
                                     <input type="submit" id="submit" name="submit" value="Sign up">
                                     <div class="help-block">If you click 'Sign up' you agree to our Terms of Service.</div>
@@ -88,7 +92,7 @@
         </section>
         
         <section>
-            <div id="love">
+            <div id="content">
                 <div class="container">
                     <div>
                         <div>
@@ -97,17 +101,17 @@
                         </div>
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="text-center green-sea"><i class="fa fa-lock fa-3x"></i></div>
+                                <div class="text-center color-fa"><i class="fa fa-lock fa-3x"></i></div>
                                 <h4 class="text-center">Secure</h4>
                                 <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo tortor at feugiat auctor. Phasellus ullamcorper ligula quis tortor lobortis, at convallis libero fringilla. Donec viverra dolor ante, non sodales ante venenatis ornare.</p>
                             </div>
                             <div class="col-md-4">
-                                <div class="text-center green-sea"><i class="fa fa-power-off fa-3x"></i></div>
+                                <div class="text-center color-fa"><i class="fa fa-power-off fa-3x"></i></div>
                                 <h4 class="text-center">Simple</h4>
                                 <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo tortor at feugiat auctor. Phasellus ullamcorper ligula quis tortor lobortis, at convallis libero fringilla. Donec viverra dolor ante, non sodales ante venenatis ornare.</p>
                             </div>
                             <div class="col-md-4">
-                                <div class="text-center green-sea"><i class="fa fa-bolt fa-3x"></i></div>
+                                <div class="text-center color-fa"><i class="fa fa-bolt fa-3x"></i></div>
                                 <h4 class="text-center">Fast</h4>
                                 <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo tortor at feugiat auctor. Phasellus ullamcorper ligula quis tortor lobortis, at convallis libero fringilla. Donec viverra dolor ante, non sodales ante venenatis ornare.</p>
                             </div>
@@ -126,7 +130,7 @@
                             <p class="text-center byline">We're working on other platforms at the moment, with all the awesomeness of the Windows version and more!</p>
                         </div>
                     </div>
-                    <div class="windows">
+                    <div class="os">
                         <div class="row">
                             <a class="btn btn-default left" href="#" role="button">Get X86</a>
                             <a class="btn btn-default right" href="#" role="button">Get X64</a>
@@ -141,16 +145,21 @@
             <div class="container">
                 <ul class="left">
                     <li>&copy; All rights reserved.</li>
-                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="https://ttvmc.com/terms">Terms of Service</a></li>
                 </ul>
                 <ul class="right">
-                    <li><a href="#">Status</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li class="footer-end"><a href="#">Twitter</a></li>
+                    <li><a href="https://support.ttvmc.com/status">Status</a></li>
+                    <li><a href="https://ttvmc.com/about">About</a></li>
+                    <li><a href="https://blog.ttvmc.com">Blog</a></li>
+                    <li class="margin04000"><a href="#">Twitter</a></li>
                 </ul>
             </div>              
         </section>
+        
+        <!-- Disable the Site Alert by adding the CSS property 'display: none;' to the #site-alert class -->
+        <div id="site-alert">
+            <p>Site alert: Our service is in development mode. You cannot sign up or log in during this time.</p>
+        </div>
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
