@@ -22,6 +22,8 @@ body {
 }
 
 #container {
+    border: rgb(90,70,36);
+    border-width: 5px;
 	border-style: solid;
 }
 
@@ -73,9 +75,9 @@ body {
 
 #credits {
 	position:absolute;
-	left: 33em;
+	float:right;
 	top:2em;
-	width:30em;
+	width:22em;
 	height:28em;
 	color: #1F0000;
 	font-size: 17px;
