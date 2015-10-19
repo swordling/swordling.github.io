@@ -74,7 +74,7 @@ body {
 }
 
 #credits {
-	position:absolute;
+	position:relative;
 	float:right;
 	top:2em;
 	width:22em;
